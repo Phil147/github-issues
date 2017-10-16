@@ -1,2 +1,3 @@
 .idea/
 secure_settings.py
+__pycache__/
