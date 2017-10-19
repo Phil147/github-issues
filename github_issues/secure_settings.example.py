@@ -12,4 +12,4 @@ REPO_NAME = 'AwesomeStuff'
 
 # Your Github login for basic auth against Github API
 GITHUB_LOGIN = 'Me'
-GITHUB_ACCESS_TOKEN = 'MyUltrasecurePWD'
+GITHUB_ACCESS_TOKEN = 'MyPersonalToken'
