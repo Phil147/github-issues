@@ -1,5 +1,12 @@
 import requests
 from django.conf import settings
+from django.core.exceptions import ImproperlyConfigured
+
+# Checks if settings are set
+required_settings = ('REPO_OWNER', 'REPO_NAME', 'GITHUB_LOGIN', 'GITHUB_ACCESS_TOKEN')
+for setting in required_settings:
+    if not hasattr(settings, setting) or not getattr(settings, setting):
+        raise ImproperlyConfigured('{} must be set and must not be empty'.format(setting))
 
 
 def create_issue(title, body):
