@@ -5,7 +5,7 @@ from django.forms import Form, CharField
 
 class IssueForm(Form):
     title = CharField(required=True, max_length=255)
-    body = CharField(required=True)
+    body = CharField(required=False)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
