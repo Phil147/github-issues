@@ -17,6 +17,10 @@ fill in your values. If you use a [personal access token](https://github.com/set
     ```
 * Go to [http://localhost:8000/issues](http://localhost:8000/issues) and create issues
 * Please don't spam repos other than your own with issues ;)
+* Run unit tests with
+    ```
+    python3 manage.py test
+    ```
 
 #### Important files/stuff for the task by SinnerSchrader
 * secure_settings.example.py -> no sensitive data committed to git
