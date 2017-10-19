@@ -16,7 +16,7 @@ class IssueCreateView(TemplateView, FormView):
         r = create_issue(form.cleaned_data['title'], form.cleaned_data['body'])
         response = r.json()
         if r.status_code != 201:
-            message = 'Oops something went wrong:<br>{}'.format(response['message'])
+            message = 'Oops something went wrong, error message: {}'.format(response['message'])
             message_level = messages.ERROR
         else:
             message = mark_safe(
